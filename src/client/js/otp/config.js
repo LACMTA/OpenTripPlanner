@@ -162,10 +162,15 @@ otp.config = {
      */
 
     geocoders : [
-        {
+        /*{
             name: 'OTP built-in geocoder',
             className: 'otp.core.GeocoderBuiltin'
             // URL and query parameter do not need to be set for built-in geocoder.
+        },*/
+        {
+            name: 'OTP pelias geocoder',
+            className: 'otp.core.GeocoderPelias',
+            url: 'https://search.mapzen.com/v1/autocomplete'
         }
     ],
 
